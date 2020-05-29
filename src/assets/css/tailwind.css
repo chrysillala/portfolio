@@ -1,0 +1,28 @@
+@tailwind base;
+h1, h2, h3 {
+   @apply mb-4;
+}
+h1 {
+  @apply text-6xl;
+}
+h2 {
+  @apply text-5xl;
+}
+h3 {
+  @apply text-4xl;
+}
+a {
+  @apply ease-in duration-300;
+}
+section {
+  @apply p-6;
+}
+
+@screen md {
+  section {
+    @apply p-12;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;

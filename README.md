@@ -27,8 +27,9 @@ yarn add -D tailwindcss
 ### Add tailwind.config.js
 npx tailwind init
 
-tailwind.config.js
 ```
+// tailwind.config.js
+
 module.exports = {
   purge: {
     enabled: process.env.NODE_ENV === 'production',
@@ -47,8 +48,10 @@ module.exports = {
 
 ### Add postcss.config.js
 touch postcss.config.js
-postcss.config.js
+
 ```
+// postcss.config.js
+
 module.exports = {
   plugins: [
     require('tailwindcss')('tailwind.config.js'),
@@ -66,8 +69,11 @@ src/assets/css/tailwind.css
 ```
 
 ### Import tailwind.css
-main.js
+```
+// main.js
+
 import '@/assets/css/tailwind.css';
+```
 
 ### Restart server after you make changes in tailwind.css
 
@@ -75,13 +81,16 @@ import '@/assets/css/tailwind.css';
 ## Sal setup
 yarn add -D sal.js
 
-App.vue
+
+```
+// App.vue
 
 mounted() {
   sal();
 }
 
 @import './node_modules/sal.js/dist/sal.css';
+```
 
 
 ## Fontawesome setup

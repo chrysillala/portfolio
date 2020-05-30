@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="p-5">
     Made with ❤️
   </footer>
 </template>

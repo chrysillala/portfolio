@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="flex items-center justify-center bg-blue-900 text-white">
-      <img class="rounded-full w-2/4 h-2/4" src="../assets/images/profile-pic2.jpg" alt="Chrysilla Mayasari">
+      <img class="rounded-full w-2/4 h-2/4" src="../assets/images/profile-pic2.jpg" alt="Profile Picture" data-sal="slide-in">
     </div>
   </section>
 </template>
@@ -25,13 +25,13 @@
 
 .animate {
   /* background: url('https://png.pngtree.com/element_our/md/20171208/md_5a2aea2511740.jpg'); */
-  background: linear-gradient(270deg, #2a4365, #1eb991);
+  background: linear-gradient(270deg, #2a4365, #4fd1c5);
   background-size: 400% 400%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: moveBg 5s linear infinite;
-  -webkit-animation: moveBg 5s linear infinite;
+  animation: moveBg 3.5s linear infinite;
+  -webkit-animation: moveBg 3.5s linear infinite;
   font-weight: 900;
   /* letter-spacing: 5px; */
   /* -webkit-text-stroke: 1px #000; */

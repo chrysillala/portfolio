@@ -1,7 +1,7 @@
 <template>
   <main>
     <Hero/>
-    <About/>
+    <About animation="fade"/>
     <Experience/>
     <Volunteer/>
     <Projects/>

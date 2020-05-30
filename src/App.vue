@@ -28,7 +28,6 @@ export default {
       })
     } else {
       sal({
-        threshold: .8,
         once: false
       })
     }

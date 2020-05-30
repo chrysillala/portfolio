@@ -82,3 +82,13 @@ mounted() {
 }
 
 @import './node_modules/sal.js/dist/sal.css';
+
+
+## Fontawesome setup
+
+```
+yarn add -D @fortawesome/fontawesome-svg-core
+yarn add -D @fortawesome/free-solid-svg-icons
+yarn add -D @fortawesome/free-brands-svg-icons
+yarn add -D @fortawesome/vue-fontawesome
+```

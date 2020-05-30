@@ -2,7 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 // import './registerServiceWorker'
 
-import '@/assets/css/tailwind.css';
+import '@/assets/css/tailwind.css'
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 

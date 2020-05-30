@@ -1,12 +1,13 @@
 <template>
   <section class="bg-blue-900 text-white p-6 md:p-12">
-    <h3>Projects</h3>
+    <h3 data-sal="fade">Projects</h3>
     <div class="grid md:grid-cols-3 gap-4">
-      <a :href=project.url class="transform hover:scale-105"
-        v-for="project in projects"
+      <div class="" data-sal="slide-down" :data-sal-delay=index*100
+        v-for="(project, index) in projects"
         :key="project.id"
         v-if="project.isShown">
-        <div class="flex justify-center items-center rounded shadow-lg bg-white text-black h-full">
+        <a class="flex justify-center items-center rounded shadow-lg bg-white text-black h-full transform hover:scale-105"
+          :href=project.url>
           <div class="px-6 py-4">
             <div class="font-bold text-3xl mb-2">{{ project.title }}</div>
             <div class="py-4">
@@ -14,8 +15,8 @@
                 v-for="tag in project.tags">{{ tag }}</span>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -31,28 +32,32 @@
             title: 'gojek.com',
             url: 'https://www.gojek.com',
             tags: ['Django', 'jQuery', 'SCSS'],
-            isShown: true
+            isShown: true,
+            delay: 100
           },
           {
             id: 2,
             title: 'Gojek Career',
             url: 'https://career.gojek.com',
             tags: ['Django', 'jQuery', 'SCSS'],
-            isShown: true
+            isShown: true,
+            delay: 150
           },
           {
             id: 3,
             title: 'Gojek Singapore',
             url: 'https://www.gojek.com/sg',
             tags: ['Django', 'jQuery', 'SCSS'],
-            isShown: true
+            isShown: true,
+            delay: 200
           },
           {
             id: 4,
             title: 'Harkulnas 2019',
             url: 'https://harkulnas.co.id',
             tags: ['Django', 'jQuery', 'SCSS'],
-            isShown: true
+            isShown: true,
+            delay: 250
           },
           {
             id: 5,
@@ -77,7 +82,7 @@
           },
           {
             id: 8,
-            title: 'Ghibli API',
+            title: 'Ghibli Movies',
             url: 'https://chrysillala.github.io/ghibli-api/',
             tags: ['Vanilla JS'],
             isShown: true

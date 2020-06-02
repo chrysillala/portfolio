@@ -7,7 +7,8 @@
         :key="project.id"
         v-if="project.isShown">
         <a class="flex justify-center items-center rounded shadow-lg bg-white text-black h-full transform hover:scale-105"
-          :href=project.url>
+          :href=project.url
+          target="_blank">
           <div class="px-6 py-4">
             <div class="font-bold text-3xl mb-2">{{ project.title }}</div>
             <div class="py-4">
@@ -92,6 +93,13 @@
             title: 'Social Media Dashboard',
             url: 'https://fem-sns-dashboard.now.sh/',
             tags: ['Vanilla JS'],
+            isShown: true
+          },
+          {
+            id: 10,
+            title: 'Super Smash Bros Amiibo',
+            url: 'https://learn-vue-router.now.sh/',
+            tags: ['Vue JS'],
             isShown: true
           },
         ]
